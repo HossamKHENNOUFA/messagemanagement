@@ -101,15 +101,16 @@
 <body>
     <div class="container">
         <div class="title">Login to the System</div>
-        <form action="">
+        <form method="POST" action="{{ route('login') }}">
+        @csrf
         <div class="user-details">
             <div class="input-box">
                 <span class="details">Full Name</span>
-                <input type="text" name="" id="">
+                <input type="text" name="email" id="">
             </div>
             <div class="input-box">
                 <span class="details">Password</span>
-                <input type="text" name="" id="">
+                <input type="password" name="password" id="">
             </div>
         </div>
         <div class="button">
